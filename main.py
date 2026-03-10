@@ -42,8 +42,8 @@ for _ in month:
                 f.write(letter)
 
 # 4. Send the letter generated in step 3 to that person's email address.
-            sender_email = os.environ.get("sender_email")
-            send_pw = os.environ.get("send_pw")
+            sender_email = os.environ.get("SENDER_EMAIL")
+            send_pw = os.environ.get("SEND_PW")
             
             to_email = email[count]
             message = f"Subject: Happy Birthday!!\n\n {letter}"
